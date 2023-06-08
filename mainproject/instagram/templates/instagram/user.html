@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>
+			Create Acconunt
+		</title>
+		<script> </script>
+		<!-- <style>
+			body{
+				padding-top: 50px;
+                padding-right: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+			}
+	
+			body{
+                text-align: center;
+				margin-top: 150px;
+                margin-bottom: 100px;
+                margin-right: 150px;
+                margin-left: 80px;
+			}
+		</style> -->
+		<body>
+			{% for i in page %}
+			<li>{{i.name}}</li>
+			<li>{{i.email}}</li>
+			<li>{{i.dateofbirth}}</li>
+			<li>{{i.password}}</li><br>
+			{% endfor %}
+         </body>  
+</html>
+
+

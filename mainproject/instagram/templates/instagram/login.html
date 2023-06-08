@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>
+	Instagram Login
+</title>
+<style>
+	body{
+		text-align: center;
+	}
+	body{
+
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+	}
+</style>
+<body>
+	<h1> Instagram </h1> 
+	<form  method="post">
+		{%csrf_token%}
+		<label for="fname">Email:</label><br>
+		<input type="email" name="email"> <br>
+		<label for="lname">password:</label><br>
+		<input type="password"> <br> <br>
+		<input type="submit" value="login"> 
+	</form>
+	
+</body>
+</head>
+</html>

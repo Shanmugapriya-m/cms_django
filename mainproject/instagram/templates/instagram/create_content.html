@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            Content
+        </title>
+    </head>
+    <body>
+        <form method="post">
+            {%csrf_token%}
+            <p><label for="id_Title">Title:</label> 
+            <input type="text" name="Title" maxlength="15" required id="id_Title"></p>
+            <p><label for="id_Image">Image:</label> 
+            <input type="file" name="Image" accept="image/*" required id="id_Image"></p>
+            <p><label for="id_Content">Content:</label> 
+            <textarea name="Content" cols="40" rows="10" maxlength="5000" required id="id_Content"></textarea></p>
+            <input type='submit' name="Submit">
+            </form> 
+    </body>
+</html>

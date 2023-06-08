@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>
+            Update
+        </title>
+        <body>
+            <form method="post">
+                {%csrf_token%}
+                {{form.as_p}}
+            <button type="submit">Update</button>                                                       
+        </form>
+        </body>
+    </head>
+</html>

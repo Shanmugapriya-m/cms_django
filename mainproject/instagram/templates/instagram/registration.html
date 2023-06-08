@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>
+			Create Acconunt
+		</title>
+		</head>
+		<script> </script>
+		<style>
+			body{
+				text-align: center;
+				padding-top: 50px;
+                padding-right: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+			}
+	
+			body{
+                text-align: center;
+				margin-top: 150px;
+                margin-bottom: 100px;
+                margin-right: 150px;
+                margin-left: 80px;
+			}
+		</style>
+		<body>
+			<h1>{{page}}</h1>
+			<form method="POST">
+                {% csrf_token %}
+				<p><label for="id_name">Name:</label> <input type="text" name="name" maxlength="25" required id="id_name"></p>
+				<p><label for="id_email">Email:</label> <input type="email" name="email" maxlength="25" required id="id_email"></p>
+				<p><label for="id_dateofbirth">Dateofbirth:</label> <input type="date" name="dateofbirth" required id="id_dateofbirth"></p>
+				<p><label for="id_password">Password:</label> <input type="password" name="password" maxlength="15" required id="id_password"></p>		
+				<!-- s -->
+				<button onclick='myFunction()'>Create Account</button>
+			</form>
+			<script>
+				function myFunction(){
+					alert('Fill the data is before your submit')
+				}
+			</script>
+		</body>
+</html>
+
+
